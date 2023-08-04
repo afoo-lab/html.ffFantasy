@@ -22,7 +22,6 @@
             align-items: center;
             justify-content: center;
             padding-bottom: 20px;
-            perspective: 900px;
         }
 
         .card-1{
@@ -44,52 +43,18 @@
             transform: translateY(-10px);
         }
 
-        .container-2 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-bottom: 20px;
-            perspective: 900px;
-            width: 200px;
-            height: 230px;
-          }
-
-        .card-2 {
-            width: 200px;
-            height: 230px;
-            box-sizing: border-box;
-            cursor: pointer;
-            text-align: center;
-            position: relative;
-            transition: 1500ms;
-            transform-style: preserve-3d; 
+        .icon {
+            font-size: 20px;
+            margin-left: 10px;
+            margin-top: 3px;
         }
 
-        .container-2:hover .card-2 {
-          transform: rotateY(180deg);
-          cursor: pointer;
+        .like:hover {
+            color: rgb(14, 60, 229);
         }
 
-        .front, .back {
-          width: 100%;
-          height: 100%;
-          border-radius: 10px;
-          position: absolute;
-          backface-visibility: hidden;
-          box-shadow: rgba(45, 43, 43, 0.35) 0px 5px 15px;
-        }
-
-        .front {
-            background-image: url(./images/cherry.png);
-            background-position: center;
-            background-size: cover;
-        }
-        .back {
-          background-image: url(./images/bg.png);
-          background-size: cover;
-          transform: rotateY(180deg);
+        .section-2 {
           display: flex;
-          flex-direction: column;
           align-items: center;
           justify-content: center;
         }
@@ -114,12 +79,12 @@
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="index.html" class="nav-link px-2 text-secondary">Home</a></li>
                     <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">21-22</a></li>
+                    <li><a href="21-22.html" class="nav-link px-2 text-white">21-22</a></li>
                     <li><a href="22-23.html" class="nav-link px-2 text-white">22-23</a></li>
                 </ul>
 
                 <div class="text-end">
-                    <a href="login.html"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+                    <a href=""><button type="button" class="btn btn-outline-light me-2">Login</button></a>
                     <button type="button" class="btn btn-warning">Sign-up</button>
                 </div>
                 </div>
@@ -145,114 +110,31 @@
 
   </section>
 
-  <div class="container">
-    <h2 style="padding: 20px 0; text-align: center; margin-top: 20px;">FF Fantasy Premier League 2021-2022 Season</h2>
-    <p style="text-align: center; font-size: 2rem; margin-bottom: 50px;">Manager of the Season</p>
-  </div>
+  <div class="section-2 form-signin w-100 m-auto container">
+    <form>
+      <img class="mb-4" src="./images/ff-logo.png" alt="" width="72" height="47">
+      <h1 class="h3 mb-3 fw-normal">Please Sign in</h1>
   
-  <div class="container container-2">
-    <div class="card-2">
-        <div class="front"></div>
-        <div class="back">
-          <p>Grand Winner</p>
-          <p>Ahmed Fayaz</p>
-          <img style="border: 3px solid white; border-radius: 50%;" src="./images/cherry-modified.png" alt="" width="80px">
-        </div>
-    </div>
-  </div>
-
-<div class="container text-body-secondary" style="border-bottom: 1px solid rgb(230, 229, 229); padding-top: 20px;"></div>
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
   
- 
-  <div class="container">
-    <h2 style="padding: 20px 0; text-align: center; margin-top: 20px;">FF Fantasy Premier League 2021-2022 Season</h2>
-    <p style="text-align: center; font-size: 2rem; margin-bottom: 50px;">Weekly Winners</p>
-  </div>
-
-  <div class="container container-1">
-    <div class="row row-1">
-        <div class="col">
-            <div class="card-1 photo-1">
-                <h2>Week 01 Winner</h2>
-                <p>Thauseef</p>
-                <img style="border: 3px solid white; border-radius: 50%;" src="./images/afoo-modified.png" alt="" width="80px">
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card-1 photo-2">
-                <h2>Week 02 Winner</h2>
-                <p>Fareesh</p>
-                <img style="border: 3px solid white; border-radius: 50%;" src="./images/anthony-modified.png" alt="" width="80px">
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card-1 photo-3">
-                <h2>Week 03 Winner</h2>
-                <p>Saffaz</p>
-                <img style="border: 3px solid white; border-radius: 50%;" src="./images/anthony-modified.png" alt="" width="80px">
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card-1 photo-4">
-                <h2>Week 04 Winner</h2>
-                <p>H.Fayaz</p>
-                <img style="border: 3px solid white; border-radius: 50%;" src="./images/h-fayaz-modified.png" alt="" width="80px">
-            </div>
-        </div>
-
-        <div class="col">
-          <div class="card-1 photo-4">
-              <h2>Week 05 Winner</h2>
-              <p>H.Fayaz</p>
-              <img style="border: 3px solid white; border-radius: 50%;" src="./images/h-fayaz-modified.png" alt="" width="80px">
-          </div>
+      <div class="form-check text-start my-3">
+        <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Remember me
+        </label>
       </div>
+      <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-body-secondary">© 2023–2024</p>
+    </form>
 
-      <div class="col">
-        <div class="card-1 photo-1">
-            <h2>Week 01 Winner</h2>
-            <p>-------------</p>
-            <img style="border: 3px solid white; border-radius: 50%;" src="./images/anthony-modified.png" alt="" width="80px">
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="card-1 photo-2">
-            <h2>Week 02 Winner</h2>
-            <p>-------------</p>
-            <img style="border: 3px solid white; border-radius: 50%;" src="./images/anthony-modified.png" alt="" width="80px">
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="card-1 photo-3">
-            <h2>Week 03 Winner</h2>
-            <p>-------------</p>
-            <img style="border: 3px solid white; border-radius: 50%;" src="./images/anthony-modified.png" alt="" width="80px">
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="card-1 photo-4">
-            <h2>Week 04 Winner</h2>
-            <p>-------------</p>
-            <img style="border: 3px solid white; border-radius: 50%;" src="./images/anthony-modified.png" alt="" width="80px">
-        </div>
-    </div>
-
-    <div class="col">
-      <div class="card-1 photo-4">
-          <h2>Week 05 Winner</h2>
-          <p>-------------</p>
-          <img style="border: 3px solid white; border-radius: 50%;" src="./images/anthony-modified.png" alt="" width="80px">
-      </div>
   </div>
-    </div>
-</div>
-
 
 
   <div class="container">
