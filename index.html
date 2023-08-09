@@ -53,6 +53,10 @@
             color: rgb(14, 60, 229);
         }
 
+        #txt {
+          text-align: center;
+        }
+
         @media (max-width: 485px) {
              .card-1{
           width: 100%;
@@ -62,7 +66,8 @@
        
     </style>
 </head>
-<body>
+<body onload="startTime()">
+
     <section class="main">
         <header class="p-3 text-bg-dark">
             <div class="container">
@@ -75,6 +80,7 @@
                     <li><a href="#" class="nav-link px-2 text-white">About</a></li>
                     <li><a href="21-22.html" class="nav-link px-2 text-white">21-22</a></li>
                     <li><a href="22-23.html" class="nav-link px-2 text-white">22-23</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white"><div id="txt"></div></a></li>
                 </ul>
 
                 <div class="text-end">
@@ -84,6 +90,24 @@
                 </div>
             </div>
         </header>
+        
+        <script>
+        function startTime() {
+          const today = new Date();
+          let h = today.getHours();
+          let m = today.getMinutes();
+          let s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+          setTimeout(startTime, 1000);
+        }
+        
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+        </script>
 
         
         <div class="px-4 pt-5 my-5 text-center border-bottom">
